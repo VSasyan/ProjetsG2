@@ -1,29 +1,32 @@
 # ProjetsG2
 
-## QGIS : afficher Layer depuis des varaibles
+## Installation de Postgres Ubuntu
 
-https://gis.stackexchange.com/a/174848
-
-## Installation Posrgres Ubuntu
-
-#### Installation
+#### Installation système
 
 ```
 sudo apt update
 sudo apt install postgresql postgresql-contrib
 ```
 
-#### Configration
+#### Configuration
+
+Authorisation de se connecter via mot de passe (pour pouvoir accéder à la base depuis PgAdmin, Python, etc) :
 
 ```
+# On passe en utilisation postgres
 sudo su postgres
+# On se connecte à la base
 psql
 ```
+
+On ajoute à l'utilisateur la possibilité de se connecter via mdp :
 
 ```
 ALTER USER postgres WITH PASSWORD 'postgres';
 ```
-Quitter :
+
+Quitter la connexion SQL et la session `postgres` :
 
 ```
 Ctrl+D

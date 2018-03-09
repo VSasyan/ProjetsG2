@@ -4,7 +4,7 @@
 
 #### Installation système
 
-```
+```sh
 sudo apt update
 sudo apt install postgresql postgresql-contrib
 ```
@@ -13,7 +13,7 @@ sudo apt install postgresql postgresql-contrib
 
 Authorisation de se connecter via mot de passe (pour pouvoir accéder à la base depuis PgAdmin, Python, etc) :
 
-```
+```sh
 # On passe en utilisation postgres
 sudo su postgres
 # On se connecte à la base
@@ -22,7 +22,7 @@ psql
 
 On ajoute à l'utilisateur la possibilité de se connecter via mdp :
 
-```
+```sql
 ALTER USER postgres WITH PASSWORD 'postgres';
 ```
 

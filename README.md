@@ -40,4 +40,4 @@ Il faut ajouter l'extension géographique à votre base de données :
 CREATE EXTENSION postgis;
 ```
 
-Ceci est un code SQL à lancer en étant conencté à la base.
+Ceci est un code SQL à lancer en étant connecté à la base.

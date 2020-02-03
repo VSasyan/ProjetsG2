@@ -6,7 +6,7 @@
 
 ```sh
 sudo apt update
-sudo apt install postgresql postgresql-contrib
+sudo apt install postgresql postgresql-contrib postgis
 ```
 
 #### Configuration
@@ -32,3 +32,12 @@ Quitter la connexion SQL et la session `postgres` :
 Ctrl+D
 Ctrl+D
 ```
+#### Exension géographiques
+
+Il faut ajouter l'extension géographique à votre base de données :
+
+```sql
+CREATE EXTENSION postgis;
+```
+
+Ceci est un code SQL à lancer en étant conencté à la base.
